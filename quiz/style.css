@@ -1,0 +1,24 @@
+.program{
+    width: 300px;
+    height: 100%;
+    display: inline-block;
+    border-color: black;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 5px;
+    margin: 10px;
+}
+.program h3{
+    background-color: black;
+    color: white;
+}
+.program:hover h3{
+    background-color: red;
+}
+.program img{
+    width: 300px;
+    height: 300px;
+}
+.program:hover{
+    border-color: red;
+}

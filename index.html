@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Code Deluxe || Home</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<style>  @font-face {   font-family: 'KetchupFont';   src: url('KetchupFont.ttf') format('truetype'); }  
+	body {   font-family: 'KetchupFont', Arial, sans-serif;    } 
+	#loading-screen {   position: fixed;   top: 0;   left: 0;   width: 100%;   height: 100%;   
+	background-color: red;   z-index: 9999;   display: flex;   align-items: center;   justify-content: center; } 
+	#loading-screen img{width: 60%;}
+	#loading-animation {   color: black;   font-size: 2em;   animation: loading-animation 2s infinite;    }  
+	@keyframes loading-animation {   0% {     transform: rotate(360deg);   }   100% {     transform: rotate(360deg);   } }  </style>      
+	<div id="loading-screen">   <div id="loading-animation"><center><img src="loader.gif"></center></div></div> <script>     setTimeout(function() {   var loadingScreen = document.getElementById("loading-screen");   loadingScreen.parentNode.removeChild(loadingScreen); }, 2000);   </script>
+	<div class="wrapper">
+		<div class="header">
+			<nav class="navbar">
+                <h1 style="display: inline-block;font-size: 50px;margin-top: 1px;margin-left: 10px;color: white;"><bold>Code Deluxe</bold></h1>
+				<ul>
+					<li><a class="active" href="#">Home</a></li>
+					<li><a href="practice">Practice</a></li>
+					<li><a href="quiz/">Quiz</a></li>
+					<li><a href="about/">About</a></li>		
+					<li><a href="contanct/">Contact</a></li>
+					<li><a href="more">More</a></li>
+				</ul>
+			</nav>
+		<div class="center">
+			<h1 style="color: black;">Take Code</h1>
+			<h2 style="color: black;">To A New Level</h2>
+			<div class="buttons">
+			<a href="quiz"><button>Start Coding</button></a>
+			<a href="practice"><button class="btn2">Tutorial</button></a>
+		</div>
+		</div>
+</body>
+</html>
